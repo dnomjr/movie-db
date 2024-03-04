@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .linkClass {
+    @apply transition-all hover:text-red-500;
+  }
+  .iconClass {
+    @apply m-auto h-8 w-auto;
+  }
+  .nameClass {
+    @apply text-[.70rem];
+  }
+}
