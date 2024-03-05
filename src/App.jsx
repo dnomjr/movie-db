@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard';
 import Movies from './pages/Movies';
 import Series from './pages/Series';
 import Login from './pages/Login';
+import Register from './pages/Register';
 
 const App = () => {
   return (
@@ -14,8 +15,8 @@ const App = () => {
           <Route path="movies" element={<Movies />} />
           <Route path="series" element={<Series />} />
         </Route>
-        <Route path='login' element={<Login />} />
-    
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

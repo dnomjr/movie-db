@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { LuLayoutDashboard } from 'react-icons/lu';
 import { TbMovie } from 'react-icons/tb';
 import { PiTelevisionBold } from 'react-icons/pi';
-import { RiLoginCircleLine } from 'react-icons/ri';
+import { CgLogIn } from 'react-icons/cg';
+import { LuPlusSquare } from 'react-icons/lu';
 
 const Nav = () => {
   return (
@@ -27,10 +28,16 @@ const Nav = () => {
             <span className="nameClass">TV Series</span>
           </NavLink>
         </li>
-        <li className="last:pt-10">
+        <li className="pt-10">
           <NavLink to="login" className="linkClass">
-            <RiLoginCircleLine className="iconClass" />
+            <CgLogIn className="iconClass" />
             <span className="nameClass">Login</span>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="register" className="linkClass">
+            <LuPlusSquare className="iconClass" />
+            <span className="nameClass">Join TMDB</span>
           </NavLink>
         </li>
       </ul>

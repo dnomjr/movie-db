@@ -2,10 +2,10 @@ import { SlMagnifier } from 'react-icons/sl';
 
 const Search = () => {
   return (
-    <form className="relative w-full">
+    <form className="relative w-full max-w-5xl">
       <input
-        type="text"
-        placeholder="Search for movies or TV series"
+        type="search"
+        placeholder="Search for a movies or TV series"
         className="w-full rounded-lg border p-2 text-black focus:outline-red-600"
       />
       <button className="absolute right-4 top-2">
