@@ -4,7 +4,7 @@ import Header from './Header';
 
 const AppLayout = () => {
   return (
-    <div className="grid  grid-cols-layoutCols grid-rows-layoutRows bg-softBlueBg text-main">
+    <div className="grid-cols-layoutColsMobile grid grid-rows-layoutRows bg-softBlueBg text-main sm:grid-cols-layoutCols">
       <Header />
       <Sidebar />
       <main className="bg-darkBlueBg">

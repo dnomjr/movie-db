@@ -2,14 +2,18 @@ import { SlMagnifier } from 'react-icons/sl';
 
 const Search = () => {
   return (
-    <form className="relative w-full max-w-5xl">
+    <form className="relative w-full">
       <input
-        type="search"
-        placeholder="Search for a movies or TV series"
-        className="w-full rounded-lg border p-2 text-black focus:outline-red-600"
+        type="text"
+        placeholder={
+          window.innerWidth >= 550
+            ? 'Search for a movies or TV series'
+            : 'Search TMDb'
+        }
+        className="w-full rounded-lg border p-1 pr-10 text-black focus:outline-red-600 sm:p-2 sm:pr-12"
       />
-      <button className="absolute right-4 top-2">
-        <SlMagnifier className="h-auto w-6 text-gray-500" />
+      <button className="absolute right-2 top-2 bg-white ">
+        <SlMagnifier className="h-auto w-4  text-gray-500 sm:w-6" />
       </button>
     </form>
   );

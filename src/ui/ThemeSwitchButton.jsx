@@ -1,18 +1,18 @@
-import { IoMoonOutline } from 'react-icons/io5';
-import { GoSun } from 'react-icons/go';
+import { PiMoonLight } from 'react-icons/pi';
+import { PiSunLight } from 'react-icons/pi';
 import { useState } from 'react';
 
 const ThemeSwitchButton = () => {
   const [lightTheme, setLightTheme] = useState(false);
 
   return (
-    <div>
+    <div className="w-8">
       {lightTheme ? (
         <label
           className="linkClass cursor-pointer"
           onClick={() => setLightTheme(!lightTheme)}
         >
-          <GoSun className="h-6 w-auto" />
+          <PiSunLight className="h-6 w-auto" />
           <span className="text-[.70rem]">Light</span>
         </label>
       ) : (
@@ -20,7 +20,7 @@ const ThemeSwitchButton = () => {
           className="linkClass cursor-pointer"
           onClick={() => setLightTheme(!lightTheme)}
         >
-          <IoMoonOutline className=" h-6 w-auto " />
+          <PiMoonLight className=" h-6 w-auto " />
           <span className="text-[.70rem]">Dark</span>
         </label>
       )}

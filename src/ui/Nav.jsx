@@ -19,7 +19,7 @@ const Nav = () => {
         <li>
           <NavLink to="movies" className="linkClass">
             <TbMovie className="iconClass" />
-            <span className="nameClass">Moviess</span>
+            <span className="nameClass">Movies</span>
           </NavLink>
         </li>
         <li>
@@ -28,7 +28,7 @@ const Nav = () => {
             <span className="nameClass">TV Series</span>
           </NavLink>
         </li>
-        <li className="pt-10">
+        <li className="pt-6 sm:pt-10">
           <NavLink to="login" className="linkClass">
             <CgLogIn className="iconClass" />
             <span className="nameClass">Login</span>

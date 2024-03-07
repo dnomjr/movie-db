@@ -7,7 +7,7 @@
     @apply transition-all hover:text-red-500;
   }
   .iconClass {
-    @apply m-auto h-8 w-auto;
+    @apply m-auto h-6 w-auto sm:h-8;
   }
   .nameClass {
     @apply text-[.70rem];

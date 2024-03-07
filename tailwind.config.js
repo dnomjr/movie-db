@@ -5,6 +5,7 @@ export default {
     extend: {
       gridTemplateColumns: {
         layoutCols: "10rem 1fr",
+        layoutColsMobile: "6rem 1fr",
       },
       gridTemplateRows: {
         layoutRows: "auto 1fr",
