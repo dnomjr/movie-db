@@ -6,7 +6,7 @@ import { CiSquarePlus } from 'react-icons/ci';
 import { RiMenuFill } from 'react-icons/ri';
 const Header = () => {
   return (
-    <header className="col-start-2 col-end-3 flex flex-row justify-between gap-x-20 border-b-2 border-border bg-softBlueBg p-10 ">
+    <header className="col-start-2 col-end-3 flex flex-row justify-between gap-x-10 border-b-2 border-border bg-softBlueBg p-10  ">
       <Search />
       <RiMenuFill className="m-auto block h-8 w-auto md:hidden" />
       <div className="hidden flex-row items-center space-x-6 md:flex">
