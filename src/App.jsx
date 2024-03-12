@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import AppLayout from './ui/AppLayout';
 import Dashboard from './pages/Dashboard';
 import Movies from './pages/Movies';
@@ -6,19 +6,21 @@ import Series from './pages/Series';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <AppLayout />,
+    children: [
+      { index: true, element: <Dashboard /> },
+      { path: 'movies', element: <Movies /> },
+      { path: 'series', element: <Series /> },
+    ],
+  },
+  { path: 'login', element: <Login /> },
+  { path: 'register', element: <Register /> },
+]);
+
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<AppLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="movies" element={<Movies />} />
-          <Route path="series" element={<Series />} />
-        </Route>
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router} />;
 };
 export default App;

@@ -1,13 +1,25 @@
+import { Form } from 'react-router-dom';
+import FormInput from '../ui/FormInput';
+import SubmitBtn from '../ui/SubmitBtn';
+
 const Register = () => {
   return (
-    <div className="bg-register h-screen bg-cover">
-      <form action="" className="">
-        <h1 className="text-5xl font-bold text-white">Sign in</h1>
-        <label className="text-white">Name:</label>
-        <input type="text" />
-        <label className="text-white">Email:</label>
-        <input type="text" />
-      </form>
+    <div className='block h-screen items-center justify-center bg-register bg-cover text-white sm:flex '>
+      <Form
+        method='POST'
+        className='h-full  bg-black bg-opacity-60 p-16 sm:h-fit sm:w-[28.125rem] sm:rounded-lg'
+      >
+        <h1 className='text-5xl font-bold mb-10'>Sign up</h1>
+        <div className='space-y-6'>
+          <FormInput name='username' type='text' label='Username' />
+          <FormInput name='email' type='email' label='Email' />
+          <FormInput name='password' type='password' label='Password' />
+        </div>
+
+        <div className='mt-16'>
+          <SubmitBtn name='Sign in' />
+        </div>
+      </Form>
     </div>
   );
 };
