@@ -4,12 +4,12 @@
 
 @layer components {
   .linkClass {
-    @apply transition-all hover:text-red-500;
+    @apply text-lightIcons  hover:text-red-500 dark:text-white;
   }
   .iconClass {
-    @apply m-auto h-6 w-auto sm:h-8;
+    @apply m-auto h-6 w-auto  transition duration-500 group-hover:text-red-500 sm:h-8;
   }
   .nameClass {
-    @apply text-[.70rem];
+    @apply text-[.70rem] transition duration-500  group-hover:text-red-500;
   }
 }

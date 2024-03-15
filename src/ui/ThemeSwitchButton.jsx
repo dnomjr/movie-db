@@ -1,30 +1,26 @@
 /* eslint-disable react/prop-types */
-import { PiMoonLight } from 'react-icons/pi';
+/* import { useState } from 'react';
+ */ import { PiMoonLight } from 'react-icons/pi';
 import { PiSunLight } from 'react-icons/pi';
-import { useState } from 'react';
+import useThemeSwitch from '../hooks/useThemeSwitch';
 
 const ThemeSwitchButton = ({ iconSize, textSize, flex, width }) => {
-  const [lightTheme, setLightTheme] = useState(false);
-
+  const { darkTheme, handleTheme } = useThemeSwitch();
   return (
     <div className={`${width || 'w-8'}`}>
-      {lightTheme ? (
-        <label
-          className={`linkClass cursor-pointer ${flex} `}
-          onClick={() => setLightTheme(!lightTheme)}
-        >
-          <PiSunLight className={`${iconSize || 'h-6'}  w-auto `} />
-          <span className={textSize || 'text-[.70rem]'}>Light</span>
-        </label>
-      ) : (
-        <label
-          className={`linkClass cursor-pointer ${flex} `}
-          onClick={() => setLightTheme(!lightTheme)}
-        >
-          <PiMoonLight className={`${iconSize || 'h-6'}  w-auto`} />
-          <span className={textSize || 'text-[.70rem]'}>Dark</span>
-        </label>
-      )}
+      <button
+        className={`linkClass cursor-pointer ${flex} `}
+        onClick={handleTheme}
+      >
+        {darkTheme ? (
+          <PiSunLight className={`${iconSize || 'h-6'}  w-auto`} />
+        ) : (
+          <PiMoonLight className={`${iconSize || 'h-6'}  w-auto `} />
+        )}
+        <span className={textSize || 'text-[.70rem]'}>
+          {darkTheme ? 'Light' : 'Dark'}
+        </span>
+      </button>
     </div>
   );
 };

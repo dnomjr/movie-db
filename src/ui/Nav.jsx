@@ -8,36 +8,36 @@ import { LuPlusSquare } from 'react-icons/lu';
 
 const Nav = () => {
   return (
-    <nav className="mt-6">
-      <ul className="space-y-8 text-center">
+    <nav className='mt-6'>
+      <ul className='space-y-8 text-center'>
         <li>
-          <NavLink to="/" className="linkClass">
-            <LuLayoutDashboard className="iconClass" />
-            <span className="nameClass">Home</span>
+          <NavLink to='/' className='linkClass group'>
+            <LuLayoutDashboard className='iconClass ' />
+            <span className='nameClass'>Home</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="movies" className="linkClass">
-            <TbMovie className="iconClass" />
-            <span className="nameClass">Movies</span>
+          <NavLink to='movies' className='linkClass group'>
+            <TbMovie className='iconClass' />
+            <span className='nameClass'>Movies</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="series" className="linkClass">
-            <PiTelevisionBold className="iconClass" />
-            <span className="nameClass">TV Series</span>
+          <NavLink to='series' className='linkClass group'>
+            <PiTelevisionBold className='iconClass' />
+            <span className='nameClass'>TV Series</span>
           </NavLink>
         </li>
-        <li className="pt-6 sm:pt-10">
-          <NavLink to="login" className="linkClass">
-            <CgLogIn className="iconClass" />
-            <span className="nameClass">Login</span>
+        <li className='pt-6 sm:pt-10'>
+          <NavLink to='login' className='linkClass group'>
+            <CgLogIn className='iconClass' />
+            <span className='nameClass'>Login</span>
           </NavLink>
         </li>
         <li>
-          <NavLink to="register" className="linkClass">
-            <LuPlusSquare className="iconClass" />
-            <span className="nameClass">Join TMDB</span>
+          <NavLink to='register' className='linkClass group'>
+            <LuPlusSquare className='iconClass' />
+            <span className='nameClass'>Join TMDB</span>
           </NavLink>
         </li>
       </ul>
