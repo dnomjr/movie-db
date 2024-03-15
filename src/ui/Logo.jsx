@@ -7,7 +7,7 @@ const Logo = () => {
     <>
       <Link to='/'>
         <SiThemoviedatabase
-          className={` h-16 w-auto text-[#e63946] transition duration-500 sm:h-20 `}
+          className={` h-16 w-auto text-logoColor transition duration-500 sm:h-20 `}
         />
       </Link>
     </>

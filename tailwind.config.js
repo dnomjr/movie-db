@@ -16,6 +16,7 @@ export default {
       colors: {
         softBlueBg: '#18212f',
         darkBlueBg: '#111827',
+        logoColor: "#e63946",
 
         lightSoftBg: '#a8dadc',
         lighterSoftBg: '#f1faee',

@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
-/* import { useState } from 'react';
- */ import { PiMoonLight } from 'react-icons/pi';
+import { PiMoonLight } from 'react-icons/pi';
 import { PiSunLight } from 'react-icons/pi';
 import useThemeSwitch from '../hooks/useThemeSwitch';
 
