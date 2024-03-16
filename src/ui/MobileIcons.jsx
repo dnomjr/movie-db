@@ -11,44 +11,44 @@ const MobileIcons = () => {
   return (
     <>
       <RiMenuFill
-        className="m-auto block h-8 w-auto md:hidden"
+        className='text-text-light m-auto block h-8 w-auto dark:text-white md:hidden'
         onClick={() => setShowMenu(!showMenu)}
       />
 
       <div
-        className={`fixed right-0 top-0 h-screen w-full backdrop-blur-md transition-all duration-700 ${!showMenu ? 'translate-x-full ' : 'translate-x-0'}`}
+        className={`fixed right-0 top-0 h-screen w-full backdrop-blur-md transition duration-500 ${!showMenu ? 'translate-x-full ' : 'translate-x-0'}`}
       >
         <div
-          className={`fixed right-0 top-0 ml-auto h-full w-60 bg-softBlueBg `}
+          className={`bg-secondary-light text-text-light dark:bg-secondary-dark fixed right-0 top-0 ml-auto h-full w-60 transition duration-500 dark:text-white`}
         >
           <FaXmark
-            className="ml-auto mr-11 mt-11 h-6 w-auto"
+            className=' ml-auto mr-11 mt-11 h-6 w-auto '
             onClick={() => setShowMenu(!showMenu)}
           />
-          <div className="ml-10 mt-10 flex flex-col space-y-8">
+          <div className='ml-10 mt-10 flex flex-col space-y-8'>
             <ThemeSwitchButton
-              iconSize="h-10"
-              textSize="text-base"
-              flex="flex flex-row items-center space-x-6"
-              width="w-28"
+              iconSize='h-10'
+              textSize='text-base'
+              classes='flex flex-row items-center space-x-6'
+              width='w-28'
             />
 
             <LoginRegisterBtn
-              name="Login"
-              path="login"
-              textSize="text-base"
-              flex="flex flex-row items-center space-x-6"
+              name='Login'
+              path='login'
+              textSize='text-base'
+              classes='flex flex-row items-center space-x-6'
             >
-              <CiLogin className="h-10 w-auto md:cursor-pointer" />
+              <CiLogin className='h-10 w-auto lg:cursor-pointer' />
             </LoginRegisterBtn>
 
             <LoginRegisterBtn
-              name="Register"
-              path="register"
-              textSize="text-base"
-              flex="flex flex-row items-center space-x-6"
+              name='Register'
+              path='register'
+              textSize='text-base'
+              classes='flex flex-row items-center space-x-6'
             >
-              <CiSquarePlus className=" h-10 w-auto md:cursor-pointer" />
+              <CiSquarePlus className=' h-10 w-auto lg:cursor-pointer' />
             </LoginRegisterBtn>
           </div>
         </div>

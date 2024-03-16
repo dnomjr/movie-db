@@ -7,23 +7,21 @@ export default {
   theme: {
     extend: {
       gridTemplateColumns: {
-        layoutCols: '10rem 1fr',
-        layoutColsMobile: '6rem 1fr',
+        layout: '10rem 1fr',
+        layoutMobile: '6rem 1fr',
       },
       gridTemplateRows: {
-        layoutRows: 'auto 1fr',
+        layout: 'auto 1fr',
       },
       colors: {
-        softBlueBg: '#18212f',
-        darkBlueBg: '#111827',
-        logoColor: "#e63946",
+        'secondary-dark': '#18212f',
+        'primary-darker': '#111827',
+        'border-dark': '#1e2836',
 
-        lightSoftBg: '#a8dadc',
-        lighterSoftBg: '#f1faee',
-        lightIcons: "#1d3557",
-
-        main: '#e5e7eb',
-        border: '#1e2836',
+        'primary-lighter': '#a8dadc',
+        'secondary-light': '#f1faee',
+        'text-light': '#1d3557',
+        logo: '#e63946',
       },
       backgroundImage: {
         register:

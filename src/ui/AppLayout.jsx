@@ -4,10 +4,10 @@ import Header from './Header';
 
 const AppLayout = () => {
   return (
-    <div className='bg-lightSoftBg grid min-h-screen grid-cols-layoutColsMobile grid-rows-layoutRows text-main   transition duration-500 sm:grid-cols-layoutCols dark:bg-softBlueBg'>
+    <div className='dark:bg-secondary-dark grid min-h-screen grid-cols-layoutMobile grid-rows-layout bg-lightSoftBg transition duration-500 md:grid-cols-layout'>
       <Header />
       <Sidebar />
-      <main className='bg-lightSoftBg text-black transition duration-500 dark:bg-darkBlueBg dark:text-white'>
+      <main className='dark:bg-primary-darker bg-primary-lighter text-text-light transition duration-500 dark:text-white'>
         <Outlet />
       </main>
     </div>

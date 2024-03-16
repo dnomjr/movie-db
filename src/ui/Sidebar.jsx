@@ -3,9 +3,9 @@ import Nav from './Nav';
 
 const Sidebar = () => {
   return (
-    <aside className='col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center border-r-2 dark:border-border border-white bg-lighterSoftBg py-8 transition duration-500 dark:bg-softBlueBg'>
-      <div className='bg-lightSoftBg rounded-xl  p-4 transition duration-500 sm:p-8 dark:border-none dark:bg-darkBlueBg'>
-        <div className='border-b-2 border-border'>
+    <aside className='dark:border-border-dark bg-secondary-light dark:bg-secondary-dark col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center border-r-2 border-white py-8 transition duration-500'>
+      <div className='bg-primary-lighter dark:bg-primary-darker rounded-md p-2 transition duration-500 dark:border-none sm:rounded-xl md:p-6'>
+        <div className='dark:border-border-dark border-text-light border-b-2'>
           <Logo />
         </div>
         <Nav />

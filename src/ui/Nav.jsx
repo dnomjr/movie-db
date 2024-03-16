@@ -8,41 +8,41 @@ import { LuPlusSquare } from 'react-icons/lu';
 
 const isActive = ({ isActive }) =>
   isActive
-    ? 'linkClass text-logoColor dark:text-logoColor group'
-    : 'linkClass text-lightIcons group';
+    ? 'link text-logo dark:text-logo group'
+    : 'link text-icons-light group';
 
 const Nav = () => {
   return (
-    <nav className='mt-6'>
-      <ul className='space-y-8 text-center'>
+    <nav className='mt-8'>
+      <ul className='space-y-7 text-center'>
         <li>
           <NavLink to='/' className={isActive}>
-            <LuLayoutDashboard className='iconClass ' />
-            <span className='nameClass'>Home</span>
+            <LuLayoutDashboard className='icon' />
+            <span className='name'>Home</span>
           </NavLink>
         </li>
         <li>
           <NavLink to='movies' className={isActive}>
-            <TbMovie className='iconClass' />
-            <span className='nameClass'>Movies</span>
+            <TbMovie className='icon' />
+            <span className='name'>Movies</span>
           </NavLink>
         </li>
         <li>
           <NavLink to='series' className={isActive}>
-            <PiTelevisionBold className='iconClass' />
-            <span className='nameClass'>TV Series</span>
+            <PiTelevisionBold className='icon' />
+            <span className='name'>TV Series</span>
           </NavLink>
         </li>
         <li className='pt-6 sm:pt-10'>
           <NavLink to='login' className={isActive}>
-            <CgLogIn className='iconClass' />
-            <span className='nameClass'>Login</span>
+            <CgLogIn className='icon' />
+            <span className='name'>Login</span>
           </NavLink>
         </li>
         <li>
           <NavLink to='register' className={isActive}>
-            <LuPlusSquare className='iconClass' />
-            <span className='nameClass'>Join TMDB</span>
+            <LuPlusSquare className='icon' />
+            <span className='name'>Join TMDB</span>
           </NavLink>
         </li>
       </ul>
