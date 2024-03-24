@@ -18,8 +18,8 @@ export default {
         'primary-darker': '#111827',
         'border-dark': '#1e2836',
 
-        'primary-lighter': '#a8dadc',
-        'secondary-light': '#f1faee',
+        'primary-lighter': '#e3d5ca',
+        'secondary-light': '#edede9',
         'text-light': '#1d3557',
         logo: '#e63946',
       },
